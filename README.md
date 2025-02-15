@@ -1,14 +1,17 @@
-# Welcome to your CDK TypeScript project
+# 🚀 AWS SPA Deployment with CDK  
 
-This is a blank project for CDK development with TypeScript.
+## 🌍 Live URL  
+- **CloudFront:** [https://dn43i1il2fmv9.cloudfront.net](https://dn43i1il2fmv9.cloudfront.net)  
+- **S3 Bucket:** [https://awsdeploytsstack-mybucketf68f3ff0-kjlnvh7z9vdd.s3.ap-southeast-1.amazonaws.com/](https://awsdeploytsstack-mybucketf68f3ff0-kjlnvh7z9vdd.s3.ap-southeast-1.amazonaws.com/)  
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
-## Useful commands
-
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+## 📌 Project Overview  
+This project automates the deployment of a **Single Page Application (SPA)** on AWS using **AWS CDK (Cloud Development Kit)**. It provisions an **S3 bucket** for storage and **CloudFront** for global content delivery.  
+ 
+## 🛠️ Steps Completed  
+1. **Cloned the pre-made SPA repository** to the local machine.  
+2. **Initialized the CDK project** for infrastructure management.  
+3. **Defined the AWS stack** to include:  
+   - 📦 **S3 bucket** for storing the application files.  
+   - 🌎 **CloudFront distribution** for global content delivery.  
+4. **Deployed the application** on AWS with CDK.  
+5. **Created a Pull Request** to show the changes.  
