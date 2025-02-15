@@ -9,20 +9,12 @@ export class AwsDeployTsStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    // The code that defines your stack goes here
-
-    // example resource
-    // const queue = new sqs.Queue(this, 'AwsDeployTsQueue', {
-    //   visibilityTimeout: cdk.Duration.seconds(300)
-    // });
-    // S3 Bucket
     const bucket = new s3.Bucket(this, 'MyBucket', {
       removalPolicy: cdk.RemovalPolicy.DESTROY, // Automatically delete during teardown (for dev)
       publicReadAccess: false,
       blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
     });
 
-    // CloudFront Distribution
     const distribution = new cloudfront.CloudFrontWebDistribution(this, 'MyDistribution', {
       originConfigs: [
         {
@@ -32,7 +24,6 @@ export class AwsDeployTsStack extends cdk.Stack {
       ],
     });
 
-    // Deploy files to S3
     new s3deploy.BucketDeployment(this, 'DeployWebsite', {
       sources: [s3deploy.Source.asset('../dist/')],
       destinationBucket: bucket,
