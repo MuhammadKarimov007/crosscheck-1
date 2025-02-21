@@ -1,7 +1,7 @@
 # 🚀 AWS SPA Deployment with CDK  
 
 ## 🌍 Live URL  
-- **CloudFront:** [https://dn43i1il2fmv9.cloudfront.net](https://dn43i1il2fmv9.cloudfront.net)  
+- **CloudFront:** [https://d2vm25kpc0q132.cloudfront.net](https://d2vm25kpc0q132.cloudfront.net)  
 - **S3 Bucket:** [https://awsdeploytsstack-mybucketf68f3ff0-kjlnvh7z9vdd.s3.ap-southeast-1.amazonaws.com/](https://awsdeploytsstack-mybucketf68f3ff0-kjlnvh7z9vdd.s3.ap-southeast-1.amazonaws.com/)  
 
 ## 📌 Project Overview  
